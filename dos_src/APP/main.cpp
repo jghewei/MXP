@@ -166,6 +166,8 @@ int main(int argc, char *argv[])
 
     setenv("gAppDebugMode", "true", 1);
     tcl_main();
+	
+	printf("Exit\n");
 
     return 0;
 }
