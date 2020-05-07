@@ -1,0 +1,35 @@
+DANRIVER-MXP-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+    MODULE-IDENTITY, OBJECT-TYPE, NOTIFICATION-TYPE, enterprises, Counter64, Unsigned32
+        FROM SNMPv2-SMI    -- http://www.ietf.org/rfc/rfc2578.txt
+    TEXTUAL-CONVENTION, DateAndTime, DisplayString, TruthValue, RowStatus,RowPointer
+        FROM SNMPv2-TC;    -- http://www.ietf.org/rfc/rfc2579.txt
+
+danriver MODULE-IDENTITY
+    LAST-UPDATED "0508171200Z"
+    ORGANIZATION "Danriver Technologies Corp."
+    CONTACT-INFO
+        "Danriver Technologies Corp.
+        Postal: 
+           Tel: +86 021-56336050
+        E-mail: "
+    DESCRIPTION
+        "The Structure of Management Information for the Danriver enterprise."
+    REVISION      "0508171200Z"
+    DESCRIPTION
+        "New oid assignments for Danriver olp MIB and others."
+    REVISION      "0508171200Z"
+    DESCRIPTION
+        "Initial version of this MIB module."
+    ::= {enterprises 19293 }
+
+mxp MODULE-IDENTITY
+    LAST-UPDATED "0508171200Z"
+    ORGANIZATION "muxponder"
+    CONTACT-INFO "http://"
+    DESCRIPTION "SNMP MIB for MXP"
+    REVISION "0508171200Z"
+    DESCRIPTION "version at 201803112256"
+::= { danriver 2 }
+
